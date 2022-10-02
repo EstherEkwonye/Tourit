@@ -1,0 +1,246 @@
+
+ol li {
+
+counter-reset: orderedList;
+
+list-style: none;
+
+}
+
+ol li:before {
+
+content: counter(orderedList) ") ";
+
+counter-increment: orderedList;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid blue; */
+}
+
+body {
+    width: 100%;
+    background-image: url('/images/privacywave.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+:root {
+    --grey: #a6a7a8;
+    --blue: #2b7a8a;
+    --light-blue: #a6d9e3;
+    --categories: #e6ceb6;
+    --categories-text: #1e1e1e;
+    --latest-post: #d1bba6;
+    --black: #000000;
+    --dark-grey: #3d4041;
+    --sidebar-bg: #ecf6f9;
+    --sign-up-bg: #c3e5eca6;
+    --error-brown: #a65c33;
+    --error-text: #fafafa;
+    --error-subtext: #031013;
+    --terms-text: #031013;
+    --forgot-text: #a83434;
+    --footer: #444141;
+    --input-b-color: #faf8f6;
+    --policy-head-text: #2b2d2e;
+    --policy-p-text: #3D4041;
+}
+
+/* PRIVACY POLICY STYLING STARTS HERE */
+.policy-container {
+    background-image: url('/images/pear2.png'), url('/images/pear2.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 102% 24%, 1.5% 47.5%;
+    background-size: 175px 140px, 165px 130px;
+}
+
+.policy-content {
+    width: 77%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-image: url('/images/pear3.png');
+    background-repeat: no-repeat;
+    background-position: 87% 97.5%;
+    /* background-size: 162px 226px; */
+}
+
+.policy {
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--policy-head-text);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.policy-p {
+    color: var(--policy-p-text);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.question {
+    margin-bottom: 32px;
+    color: var(--policy-head-text);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+ol li {
+    color: var(--policy-head-text);
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+.sub-text {
+    color: var(--policy-head-text);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-bottom: 32px;
+}
+
+.policy-ul-li {
+    color: var(--policy-p-text);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.pear3 {
+    float: right;
+    margin-top: -105px;
+    margin-right: 110px;
+}
+/* PRIVACY POLICY STYLING STARTS HERE */
+
+/* FOOTER STYLING STARTS HERE */
+.footer-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.p-footer-2 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--footer);
+    color: var(--sidebar-bg);
+    padding: 0.5rem 0;
+    margin-top: 1.5rem;
+}
+
+.img {
+    height: 11rem;
+    width: 15rem;
+    margin-left: 5rem;
+}
+
+.ul-footer {
+    list-style-type: none;
+    line-height: 2rem;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.third-part-p, .para-tour-1, .para-tour-2, .ul-footer a {
+    color: var(--grey);
+}
+
+.quicklinks, .contact-us {
+    margin-top: 5rem;
+}
+
+.quicklinks, .contact-us, .para-tour-1, .third-part-p, .btn, input {
+    margin-bottom: 0.7rem;
+}
+
+input {
+    padding: 0.6rem 1.9rem;
+    color: var(--latest-post);
+    border-radius: 0.4rem;
+    font-weight: 700;
+    border-color: var(--blue);
+    border-style: solid;
+    background-color: var(--input-b-color);
+}
+
+.btn {
+    padding: 0.6rem 1.8rem;
+    background-color: var(--blue);
+    color: var(--sidebar-bg);
+    border-color: var(--blue);
+    border-style: solid;
+    text-transform: uppercase;
+    border-radius: 0.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.icon-2, .icon-3, .icon-4 {
+    margin-left: 1rem;
+}
+
+.icon-1, .icon-2, .icon-3, .icon-4 {
+    cursor: pointer;
+}
+/* FOOTER STYLING ENDS HERE */
+
+/* MEDIA QUERIES FOR PRIVACY PAGE STARTS HERE */
+@media screen and (max-width: 1024px) {
+    .policy-container {
+        background-position: 103% 24%, 0.5% 43%;
+        background-size: 170px 135px, 140px 105px;
+    }
+    .policy-content {
+        margin-top: -20px;
+        background-position: 91% 96%;
+        background-size: 22%;
+    }
+    .policy, .question, ol li {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page-logo {
+        margin-top: -32px;
+    }
+    .policy-container {
+        background-position: 104% 23%, 0.5% 44%;
+        background-size: 160px 125px, 112px 90px;
+    }
+    .policy, .question, ol li {
+        font-size: 20px;
+    }
+    .policy-p {
+        font-size: 17px;
+    }
+    .quicklinks, .contact-us {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 475px) {}
+
+@media screen and (max-width: 425px) {}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 320px) {}
